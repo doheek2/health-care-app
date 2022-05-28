@@ -115,15 +115,11 @@
 ┃ ┃ ┗ 📜_reset.scss <br />
 ┃ ┣ 📂constants <br />
 ┃ ┃ ┣ 📜_colors.scss <br />
-┃ ┃ ┣ 📜_levels.scss <br />
 ┃ ┃ ┗ 📜_sizes.scss <br />
 ┃ ┣ 📂mixins <br />
 ┃ ┃ ┣ 📜_animation.scss <br />
 ┃ ┃ ┣ 📜_flexbox.scss <br />
 ┃ ┃ ┣ 📜_position.scss <br />
-┃ ┃ ┣ 📜_responsive.scss <br />
-┃ ┃ ┣ 📜_typography.scss <br />
-┃ ┃ ┗ 📜_visual.scss <br />
 ┃ ┣ 📜index.js <br />
 ┃ ┗ 📜index.scss <br />
 ┣ 📂types <br />
