@@ -1,5 +1,5 @@
 # ⛳ Health Care App
-
+![사진1](https://user-images.githubusercontent.com/97458345/170820644-bf3edb4a-7bb0-4282-a052-016b205e7497.jpg)
 - **배포 URL** <br/> https://health-care-app-team1.netlify.app/
 
 <br />
@@ -10,6 +10,7 @@
 - **프로젝트 개요** <br/>
 본 프로젝트는 KB헬스케어 선발 과제로 그래프를 이용한 데이터 시각화 프로젝트입니다.
 
+<br />
 
 # 💡 실행 방법
 1. repository clone
@@ -145,17 +146,16 @@
  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 
- <br/>
+ <br />
 
 |라이브러리|내용|버전|
 |:---:|:---:|:---:|
 | big.js | 정확한 숫자 계산 | 6.1.1 |
 | classnames | style 관련 | 2.3.1 |
 | react-icons | 리액트 아이콘 | 4.3.1 |
-| react-router-dom | 리액트 라우터 | 6 |
 | victory | 차트 라이브러리 | 36.4.1 |
 
-<br/>
+<br />
 </div>
 
 <br />
@@ -163,20 +163,32 @@
 # 🏞 기능 설명
 ## 건강 점수
 ### 1. 건강점수 차트
+<details>
+    <summary>펼치기</summary>
 사용자의 건강점수를 받아 와서 만점 대비 사용자의 점수를 차트로 시각화 `VictoryPie`
 ```
   const healthScorePortion = (healthScore / MAX_HEALTH_SCORE) * 100;
   const remainder = 100 - healthScorePortion;
 ```
+</details>
+
+<br/>
 
 ### 2. 사용자 기본 정보 표시
+<details>
+    <summary>펼치기</summary>
 ```
 const { sex, resHeight, age } = response
 ```
 비구조화 할당하여 데이터 렌더링
+</details>
+
+<br/>
 
 ## 나의 건강점수 분석결과
 ### 1. 건강지수 연도별 변화 차트
+<details>
+    <summary>펼치기</summary>
 - 데이터에서 최근 4개의 연도별 건강점수 데이터 가져오기
 - 반영할 데이터 갯수 및 데이터의 증감률에 따라 화면의 그래프와 문구를 다르게 표현
 - 가장 최근 데이터에 색 다르게 표시
@@ -208,9 +220,13 @@ useEffect(() => {
     }
   }, [chartDataList]);
 ```
+</details>
+
 <br/>
 
-### 2. 평균 건강 점수 비교 그래프 
+### 2. 평균 건강 점수 비교 그래프
+<details>
+    <summary>펼치기</summary>
 - Victory.js 라이브러리를 이용해 그래프 구현.
 - 받아온 데이터를 x축, y축에 보여줄 데이터로 가공하여 그래프에 전달.
 - Victory.js의 VictoryBar, VictoryLine, VictoryScatter를 이용해 세가지 형식의 그래프로 보여줌.
@@ -222,6 +238,7 @@ useEffect(() => {
     <VictoryScatter data={GRAPTH_DATA} x='user' y='score' />
 </VictoryChart>
 ```
+</details>
 
 <br />
 
@@ -313,10 +330,12 @@ const DrawGraph = ({ wHscore, wHscoreDy }: IProps) => {
     
     UI를 담당할 파일과 나머지 (utils, graphOptions 등)를 구분
 </details>
+
+<br/>
  
 ## 맞춤 건강관리
 
-### data 가공
+### 1. data 가공
 <details>
  <summary> 펼치기 </summary>
 
@@ -364,7 +383,9 @@ export const useGetGuide = (tag: THealthTag) => {
 ```
 </details>
 
-### dictionary
+<br/>
+
+### 2. dictionary
 
 <details>
  <summary> 펼치기 </summary>
