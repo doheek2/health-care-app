@@ -117,7 +117,6 @@
 ┃ ┃ ┣ 📜_colors.scss <br />
 ┃ ┃ ┗ 📜_sizes.scss <br />
 ┃ ┣ 📂mixins <br />
-┃ ┃ ┣ 📜_animation.scss <br />
 ┃ ┃ ┣ 📜_flexbox.scss <br />
 ┃ ┃ ┣ 📜_position.scss <br />
 ┃ ┣ 📜index.js <br />
