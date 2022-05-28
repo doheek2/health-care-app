@@ -257,7 +257,7 @@ const Compare = ({ wHscore, wHscoreDy }: IProps) => {
   }
   if (gap < 0) {
     return <span className={cx(styles.blueText, styles.highlight)}>{gap}점 높아요</span>;
- }#
+ }
   return <span className={cx(styles.blackText, styles.highlight)}>평균과 같아요</span>;
 };
 ```
