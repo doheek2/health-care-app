@@ -41,6 +41,98 @@
 # 📁 폴더 구조
 <details>
     <summary>펼치기</summary>
+
+📦src <br />
+┣ 📂app <br />
+┃ ┣ 📂healthCare <br />
+┃ ┃ ┣ 📂careResult <br />
+┃ ┃ ┃ ┣ 📂currentStatus <br />
+┃ ┃ ┃ ┃ ┣ 📜currentStatus.module.scss <br />
+┃ ┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┃ ┣ 📂guide <br />
+┃ ┃ ┃ ┃ ┣ 📜guide.module.scss <br />
+┃ ┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┃ ┣ 📂recommendKeyword <br />
+┃ ┃ ┃ ┃ ┣ 📜index.tsx <br />
+┃ ┃ ┃ ┃ ┗ 📜recommendKeyword.module.scss <br />
+┃ ┃ ┃ ┣ 📜careResult.module.scss <br />
+┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┣ 📂header <br />
+┃ ┃ ┃ ┣ 📜header.module.scss <br />
+┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┣ 📜healthCare.module.scss <br />
+┃ ┃ ┗ 📜index.tsx <br />
+┃ ┣ 📂healthResult <br />
+┃ ┃ ┣ 📂_shared <br />
+┃ ┃ ┃ ┣ 📜index.ts <br />
+┃ ┃ ┃ ┗ 📜styles.ts <br />
+┃ ┃ ┣ 📂averageScoreGraph <br />
+┃ ┃ ┃ ┣ 📜averageScoreGraph.module.scss <br />
+┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┣ 📂compareLastYear <br />
+┃ ┃ ┃ ┣ 📜Chart.tsx <br />
+┃ ┃ ┃ ┣ 📜CompareResultText.tsx <br />
+┃ ┃ ┃ ┣ 📜MarkText.tsx <br />
+┃ ┃ ┃ ┣ 📜compareLastYear.module.scss <br />
+┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┣ 📂costPredictionGraph <br />
+┃ ┃ ┃ ┣ 📂_shared <br />
+┃ ┃ ┃ ┃ ┣ 📜graphOptions.ts <br />
+┃ ┃ ┃ ┃ ┣ 📜index.ts <br />
+┃ ┃ ┃ ┃ ┗ 📜utils.ts <br />
+┃ ┃ ┃ ┣ 📜costPredictionGraph.module.scss <br />
+┃ ┃ ┃ ┗ 📜index.tsx <br />
+┃ ┃ ┣ 📂scorePredictGraph <br />
+┃ ┃ ┃ ┣ 📜index.tsx <br />
+┃ ┃ ┃ ┣ 📜predictGraph.module.scss <br />
+┃ ┃ ┃ ┗ 📜predictGraphStyle.ts <br />
+┃ ┃ ┣ 📜healthResult.module.scss <br />
+┃ ┃ ┗ 📜index.tsx <br />
+┃ ┣ 📂myHealth <br />
+┃ ┃ ┣ 📜index.tsx <br />
+┃ ┃ ┗ 📜myHealth.module.scss <br />
+┃ ┣ 📜app.module.scss <br />
+┃ ┗ 📜index.tsx <br />
+┣ 📂assets <br />
+┃ ┗ 📂svgs <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-1.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-2.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-3.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-4.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-5.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-6.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-7.svg <br />
+┃ ┃ ┣ 📜ic-icon-mission-h-8.svg <br />
+┃ ┃ ┗ 📜index.js <br />
+┣ 📂data <br />
+┃ ┗ 📜response.json <br />
+┣ 📂dictionary <br />
+┃ ┗ 📜healthDicts.ts <br />
+┣ 📂styles <br />
+┃ ┣ 📂base <br />
+┃ ┃ ┣ 📜_fonts.scss <br />
+┃ ┃ ┣ 📜_more.scss <br />
+┃ ┃ ┗ 📜_reset.scss <br />
+┃ ┣ 📂constants <br />
+┃ ┃ ┣ 📜_colors.scss <br />
+┃ ┃ ┗ 📜_sizes.scss <br />
+┃ ┣ 📂mixins <br />
+┃ ┃ ┣ 📜_animation.scss <br />
+┃ ┃ ┣ 📜_flexbox.scss <br />
+┃ ┃ ┣ 📜_position.scss <br />
+┃ ┣ 📜index.js <br />
+┃ ┗ 📜index.scss <br />
+┣ 📂types <br />
+┃ ┣ 📜response.d.ts <br />
+┣ 📂utils <br />
+┃ ┣ 📜formatDate.ts <br />
+┃ ┗ 📜healthCare.ts <br />
+┣ 📜index.tsx <br />
+┣ 📜logo.svg <br />
+┣ 📜react-app-env.d.ts <br />
+┣ 📜reportWebVitals.ts <br />
+┗ 📜setupTests.ts <br />
+
 </details>
 
 <br />
@@ -135,8 +227,10 @@ useEffect(() => {
 <br />
 
 ### 3. 10년 후 예상 건강 그래프
-    
-- wxcResultMap > wHscore, wxcResultMap > wHscoreDy 배열의 마지막 값
+<details>
+    <summary>펼치기</summary>
+
+- 데이터에서 wxcResultMap > wHscore, wxcResultMap > wHscoreDy 배열의 마지막 값 받아와서 전달
 
 ```typescript
   const {
@@ -144,15 +238,11 @@ useEffect(() => {
     wxcResultMap: { wHscoreDy },
   } = DATA;
   const decade = wHscoreDy.length - 1;
-  
-  ...
-  
-  <Compare wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
+```
 
-  ...
-  
-   <DrawGraph wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
-
+```typescript
+<Compare wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
+<DrawGraph wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
 ```
 
 - 현재 내 점수와 10년 후 예상 점수 그래프 비교해서 점수차와 문구 출력
@@ -160,6 +250,7 @@ useEffect(() => {
     - 점수가 높으면 파랑 텍스트 출력
     - 점수가 동일하면 검정 텍스트 출력
 
+```typescript
 const Compare = ({ wHscore, wHscoreDy }: IProps) => {
   const gap = wHscore - wHscoreDy;
   if (gap > 0) {
@@ -170,6 +261,26 @@ const Compare = ({ wHscore, wHscoreDy }: IProps) => {
  }#
   return <span className={cx(styles.blackText, styles.highlight)}>평균과 같아요</span>;
 };
+```
+- Victory.js 라이브러리를 이용해 그래프 구현
+```typescript
+const DrawGraph = ({ wHscore, wHscoreDy }: IProps) => {
+  const data = [
+    { x: 1, y: wHscore },
+    { x: 2, y: wHscoreDy },
+  ];
+
+  return (
+    <VictoryChart theme={VictoryTheme.material} 
+      {...PredictGraphStyle.chart}>
+
+      ...중략...
+
+    </VictoryChart>
+  );
+};
+```
+</details>
 
 <br />
 
