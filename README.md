@@ -104,8 +104,10 @@ const { sex, resHeight, age } = response
 <br />
 
 ### 3. 10년 후 예상 건강 그래프
+<details>
+    <summary>펼치기</summary>
     
-- wxcResultMap > wHscore, wxcResultMap > wHscoreDy 배열의 마지막 값
+- 데이터에서 wxcResultMap > wHscore, wxcResultMap > wHscoreDy 배열의 마지막 값 받아와서 전달
 
 ```typescript
   const {
@@ -113,15 +115,11 @@ const { sex, resHeight, age } = response
     wxcResultMap: { wHscoreDy },
   } = DATA;
   const decade = wHscoreDy.length - 1;
-  
-  ...
-  
-  <Compare wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
+```
 
-  ...
-  
-   <DrawGraph wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
-
+```typescript
+<Compare wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
+<DrawGraph wHscore={wHscore} wHscoreDy={wHscoreDy[decade]} />
 ```
 
 - 현재 내 점수와 10년 후 예상 점수 그래프 비교해서 점수차와 문구 출력
@@ -129,6 +127,7 @@ const { sex, resHeight, age } = response
     - 점수가 높으면 파랑 텍스트 출력
     - 점수가 동일하면 검정 텍스트 출력
 
+```typescript
 const Compare = ({ wHscore, wHscoreDy }: IProps) => {
   const gap = wHscore - wHscoreDy;
   if (gap > 0) {
@@ -139,6 +138,26 @@ const Compare = ({ wHscore, wHscoreDy }: IProps) => {
  }#
   return <span className={cx(styles.blackText, styles.highlight)}>평균과 같아요</span>;
 };
+```
+- Victory.js 라이브러리를 이용해 그래프 구현
+```typescript
+const DrawGraph = ({ wHscore, wHscoreDy }: IProps) => {
+  const data = [
+    { x: 1, y: wHscore },
+    { x: 2, y: wHscoreDy },
+  ];
+
+  return (
+    <VictoryChart theme={VictoryTheme.material} 
+      {...PredictGraphStyle.chart}>
+
+      ...중략...
+
+    </VictoryChart>
+  );
+};
+```
+</details>
 
 <br />
 
