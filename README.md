@@ -117,6 +117,7 @@ useEffect(() => {
     }
   }, [chartDataList]);
 ```
+<br/>
 
 ### 2. 평균 건강 점수 비교 그래프 
 - Victory.js 라이브러리를 이용해 그래프 구현.
