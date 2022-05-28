@@ -124,7 +124,6 @@
 ┃ ┗ 📜index.scss <br />
 ┣ 📂types <br />
 ┃ ┣ 📜response.d.ts <br />
-┃ ┗ 📜todo.d.ts <br />
 ┣ 📂utils <br />
 ┃ ┣ 📜formatDate.ts <br />
 ┃ ┗ 📜healthCare.ts <br />
