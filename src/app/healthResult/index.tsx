@@ -1,14 +1,15 @@
 import AverageScoreGraph from './averageScoreGraph';
-import PredictGraph from './predictGraph';
+import ScorePredictGraph from './scorePredictGraph';
 import CostPredictionGraph from './costPredictionGraph';
 import CompareLastYear from './compareLastYear';
+import styles from './healthResult.module.scss';
 
 const HealthResult = () => {
   return (
-    <section>
+    <section className={styles.sectionWrapper}>
       <CompareLastYear />
       <AverageScoreGraph />
-      <PredictGraph />
+      <ScorePredictGraph />
       <CostPredictionGraph />
     </section>
   );
