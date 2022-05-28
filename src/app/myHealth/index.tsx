@@ -37,7 +37,7 @@ const MyHealth = () => {
             onLoad: { duration: 2000 },
           }}
           innerRadius={180}
-          colorScale={['#d9d9d9', '#f7c505']}
+          colorScale={['#d9d9d9', '#ffd303']}
         />
         <div className={styles.date}>{formatDate(healthDate)}</div>
         <button type='button' className={styles.resultButton}>
